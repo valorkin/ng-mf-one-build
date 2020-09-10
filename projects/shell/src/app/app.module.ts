@@ -1,13 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 
 import {IconModule, LayoutGridModule, LayoutPanelModule, LinkModule} from '@fundamental-ngx/core';
 
-import { AppComponent } from './app.component';
-import { APP_ROUTES } from './app.routes';
-import { ConfigComponent } from './config/config.component';
-import { PluginProxyComponent } from './plugins/plugin-proxy.component';
+import {AppComponent} from './app.component';
+import {APP_ROUTES} from './app.routes';
+import {ConfigComponent} from './config/config.component';
+import {PluginProxyPageComponent} from './plugins/plugin-proxy-page.component';
+import {PluginProxyComponent} from './plugins/plugin-proxy.component';
 import {HomeComponent} from './home/home.component';
 import {LandingComponent} from './landing/landing.component';
 
@@ -22,9 +23,11 @@ import {LandingComponent} from './landing/landing.component';
     HomeComponent,
     LandingComponent,
     PluginProxyComponent,
+    PluginProxyPageComponent,
     ConfigComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

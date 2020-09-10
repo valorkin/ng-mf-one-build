@@ -50,6 +50,7 @@ export class LookupService {
                 remoteName: 'mfe2',
                 exposedModule: './ItemPage',
 
+                tag: 'item-detail',
                 displayName: 'ItemPage',
                 componentName: 'ItemPageComponent'
             },
