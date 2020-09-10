@@ -1,7 +1,7 @@
 <fd-layout-grid [col]="6">
   <fd-layout-panel fdLayoutGridSpan [columnSpan]="4">
     <fd-layout-panel-body>
-<!--      <router-outlet name="pr-list"></router-outlet>-->
+      <plugin-proxy [options]="prlist"></plugin-proxy>
     </fd-layout-panel-body>
   </fd-layout-panel>
   <fd-layout-panel fdLayoutGridSpan [columnSpan]="2">
@@ -44,7 +44,7 @@
   </fd-layout-panel>
   <fd-layout-panel fdLayoutGridSpan [columnSpan]="1">
     <fd-layout-panel-body>
-<!--      <aba-your-favorites></aba-your-favorites>-->
+      <plugin-proxy [options]="yourfav"></plugin-proxy>
     </fd-layout-panel-body>
   </fd-layout-panel>
 </fd-layout-grid>
