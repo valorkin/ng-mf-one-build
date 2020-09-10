@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {LookupService} from '../plugins/lookup.service';
 import {PluginOptions} from '../plugins/plugin';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  encapsulation: ViewEncapsulation.None,
   styles: [`
     body {
-      font-family: 'Comfortaa', cursive;
       padding-top: 80px;
       padding-left: 10px;
     }
