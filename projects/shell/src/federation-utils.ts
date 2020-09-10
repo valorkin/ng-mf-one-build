@@ -16,7 +16,7 @@ function loadRemoteEntry(remoteEntry: string): Promise<void> {
     script.onload = () => {
       moduleMap[remoteEntry] = true;
       resolve(); // window is the global namespace
-    }
+    };
 
     document.body.append(script);
   });
@@ -38,7 +38,7 @@ export type LoadRemoteModuleOptions = {
   remoteEntry: string;
   remoteName: string;
   exposedModule: string
-}
+};
 
 export async function loadRemoteModule<T = any>(options: LoadRemoteModuleOptions): Promise<T> {
   await loadRemoteEntry(options.remoteEntry);

@@ -20,6 +20,9 @@ export class PluginProxyComponent implements OnChanges {
 
     async ngOnChanges() {
         this.viewContainer.clear();
+        if (!this.options) {
+          return;
+        }
 
         const component = await loadRemoteModule(this.options)
             .then(m => m[this.options.componentName]);
