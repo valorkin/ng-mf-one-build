@@ -21,7 +21,8 @@ const mfe1Config = {
   shared: ['@angular/core', '@angular/common', '@angular/router'],
   exposes: {
     './Download': './projects/mfe1/src/app/download.component.ts',
-    './Upload': './projects/mfe1/src/app/upload.component.ts'
+    './Upload': './projects/mfe1/src/app/upload.component.ts',
+    './PrList': './projects/mfe1/src/app/pr-list/pr-list.component.ts',
   }
 }
 

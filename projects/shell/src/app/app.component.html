@@ -4,6 +4,8 @@
     <li><a (click)="toggle()">Toggle Config</a></li>
 </ul>
 
+<!--<aba-pr-list></aba-pr-list>-->
+
 <div class="vertical-menu">
     <a href="#" class="active">Tasks</a>
     <a *ngFor="let p of plugins" (click)="add(p)">Add {{p.displayName}}</a>
@@ -12,7 +14,7 @@
 <ng-container *ngFor="let p of workflow; let last = last">
     <plugin-proxy [options]="p"></plugin-proxy>
     <i *ngIf="!last" class="arrow right" style=""></i>
-</ng-container> 
+</ng-container>
 
 <p style="clear:both">&nbsp;</p>
 <p>&nbsp;</p>

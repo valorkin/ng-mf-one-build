@@ -22,6 +22,14 @@ export class LookupService {
                 componentName: 'UploadComponent'
             },
             {
+                remoteEntry: 'http://localhost:3000/remoteEntry.js',
+                remoteName: 'mfe1',
+                exposedModule: './PrList',
+
+                displayName: 'PrList',
+                componentName: 'PrListComponent'
+            },
+            {
                 remoteEntry: 'http://localhost:3001/remoteEntry.js',
                 remoteName: 'mfe2',
                 exposedModule: './Analyze',
