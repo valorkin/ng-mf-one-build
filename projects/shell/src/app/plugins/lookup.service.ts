@@ -44,7 +44,23 @@ export class LookupService {
 
                 displayName: 'Enrich',
                 componentName: 'EnrichComponent'
-            }
+            },
+            {
+                remoteEntry: 'http://localhost:3001/remoteEntry.js',
+                remoteName: 'mfe2',
+                exposedModule: './ItemPage',
+
+                displayName: 'ItemPage',
+                componentName: 'ItemPageComponent'
+            },
+            {
+                remoteEntry: 'http://localhost:3001/remoteEntry.js',
+                remoteName: 'mfe2',
+                exposedModule: './YourFavorites',
+
+                displayName: 'YourFavorites',
+                componentName: 'YourFavoritesComponent'
+            },
         ] as PluginOptions[]);
     }
 }
