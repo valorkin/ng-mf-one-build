@@ -34,7 +34,9 @@ const mfe2Config = {
   shared: ['@angular/core', '@angular/common', '@angular/router'],
   exposes: {
     './Analyze': './projects/mfe2/src/app/analyze.component.ts',
-    './Enrich': './projects/mfe2/src/app/enrich.component.ts'
+    './Enrich': './projects/mfe2/src/app/enrich.component.ts',
+    './ItemPage': './projects/mfe2/src/app/item-page/item-page.component.ts',
+    './YourFavorites': './projects/mfe2/src/app/your-favorites/your-favorites.component.ts',
   }
 }
 
@@ -71,6 +73,10 @@ function _configTemplate(ngConfig, projectConfig) {
     },
     module: {
       rules: [
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
         {test: /\.ts$/, loader: "@ngtools/webpack"}
       ]
     },
