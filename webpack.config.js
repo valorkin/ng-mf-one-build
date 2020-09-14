@@ -9,7 +9,7 @@ const shellConfig = {
   port: 5000,
   publicPath: 'http://localhost:5000/',
   entryModule: './projects/shell/src/app/app.module#AppModule',
-  shared: ['@angular/core', '@angular/common', '@angular/router'],
+  shared: ['@angular/core', '@angular/common', '@angular/router', '@fundamental-ngx/core'],
   exposes: {}
 }
 
@@ -18,7 +18,7 @@ const mfe1Config = {
   port: 3000,
   publicPath: 'http://localhost:3000/',
   entryModule: './projects/mfe1/src/app/app.module#AppModule',
-  shared: ['@angular/core', '@angular/common', '@angular/router'],
+  shared: ['@angular/core', '@angular/common', '@angular/router', '@fundamental-ngx/core'],
   exposes: {
     './Download': './projects/mfe1/src/app/download.component.ts',
     './Upload': './projects/mfe1/src/app/upload.component.ts',
@@ -31,7 +31,7 @@ const mfe2Config = {
   port: 3001,
   publicPath: 'http://localhost:3001/',
   entryModule: './projects/mfe2/src/app/app.module#AppModule',
-  shared: ['@angular/core', '@angular/common', '@angular/router'],
+  shared: ['@angular/core', '@angular/common', '@angular/router', '@fundamental-ngx/core'],
   exposes: {
     './Analyze': './projects/mfe2/src/app/analyze.component.ts',
     './Enrich': './projects/mfe2/src/app/enrich.component.ts',
@@ -110,7 +110,8 @@ function _configTemplate(ngConfig, projectConfig) {
       path: __dirname + "/dist/" + name,
       chunkFilename: "[id].[chunkhash].js"
     },
-    mode: "production"
+    // mode: "production"
+    mode: "development"
   }
 }
 
